@@ -259,7 +259,7 @@ var paris = {
 
 
 
-paris.customerNum(11, 38);
+paris.customerNum(20, 38);
 paris.avgCookiesPurchasedPerHour();
 paris.salesResult();
 paris.sumlD1();
@@ -326,7 +326,7 @@ var lima = {
 
 
 
-lima.customerNum(11, 38);
+lima.customerNum(2, 16);
 lima.avgCookiesPurchasedPerHour();
 lima.salesResult();
 lima.sumlD1();
