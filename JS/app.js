@@ -113,23 +113,27 @@ function totalRow() {
     row7.appendChild(data6);
     data6.textContent = "Totals";
 
-    // console.log(seattle.cookiesPerHour[0]);
-    // console.log(locations[0]);
-
 
     for (var i = 0; i < operationHours.length; i++) {
-
-        var totalCookiesPerHour = (seattle.cookiesPerHour[i] + tokyo.cookiesPerHour[i] + dubai.cookiesPerHour[i] + paris.cookiesPerHour[i] + lima.cookiesPerHour[i]);
-
+        var hourTotals = 0;
+        for (var n = 0; n < locations.length; n++) {
+            hourTotals += locations[n].cookiesPerHour[i];
+        }
+        // console.log(hourTotals);     
 
         var data1 = document.createElement('td');
         row7.appendChild(data1);
-        data1.textContent = totalCookiesPerHour;
-
+        data1.textContent = hourTotals;
     }
 
-    //     // I need to sum cookiesPerhour for each hour and each object, so we need a loop for the vertical and horizontal elements
-    //     // sum with locations length and general loop for operationHours
+    var totalOfTotal = 0;
+    for (i = 0; i < locations.length; i++) {
+        totalOfTotal += locations[i].totalCookies;
+    }
+    var data3 = document.createElement('td');
+    row7.appendChild(data3);
+    data3.textContent = totalOfTotal;
+    // console.log(totalOfTotal);
 }
 
 totalRow();
