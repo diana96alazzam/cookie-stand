@@ -1,0 +1,54 @@
+html{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body{
+    background-image: url(https://lh3.googleusercontent.com/proxy/1OVGDMO0JNxUngPB0cwgRcLpuSDIYdCDD0Sk7Kv2TVj5JrYXySPIozpqGhlBi6tiHAlq_xQFMG-yJTPBQoj4t5c5_LUdOiCp7uwMIfpFVuvFP_4bXyduyNLAX5CDxWb5bDzYm35M1A);
+}
+
+
+header{
+    background-color: #36342C;
+    padding: 0.1%;
+    height: 50px;
+}
+
+#branch {
+    float: left;
+    padding: 1%;
+    background-color: #D0C9C2;
+    margin: 1%;
+
+}
+
+section img{
+    float: left;
+    width: 200px;
+}
+
+header img{
+    float: left;
+    height: 50px;
+    margin-right: 1%;}
+
+
+header nav ul li a{
+    text-decoration: none;
+    color: #BC543B;
+    float: right;
+    padding-left:1%;
+    padding-right:1%;
+    margin-top: 1.5%; 
+}
+
+header h1{
+    font-size: medium;
+    float: left;
+    text-align: center;
+    color: #FBFBF8;
+    font-weight: bolder;
+    font-size: 20px;
+    padding-top:0.8% ;
+
+}
