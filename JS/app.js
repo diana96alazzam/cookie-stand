@@ -131,14 +131,12 @@ function totalRow() {
     // console.log(totalOfTotal);
 
 
-   
+
 }
 
+totalRow();
 
 var cookieStandForm = document.getElementById('addingNewStoreform');
-
-// totalRow();
-
 
 cookieStandForm.addEventListener('submit', function () {
 
@@ -187,17 +185,18 @@ cookieStandForm.addEventListener('submit', function () {
         alert("You must add a minimum value.");
         return false;
 
+    } else if (isNaN(AvgCookiePerSale)) {
+        alert("Please insert only numbers as the the average.")
+        return false;
+    } else if (Number.isInteger(AvgCookiePerSale)) {
+        alert("Please don't enter integers.");
     } else {
+        table1.removeChild(table1.lastChild);
+        var locations = new Location(locationsNames, minHourlyCustomers, maxHourlyCustomers, AvgCookiePerSale);
 
-        if (isNaN(AvgCookiePerSale)) {
-            alert("Please insert only numbers as the the average.")
-            return false;
-        } else if (Number.isInteger(AvgCookiePerSale)) {
-            alert("Please don't enter integers.");
-        }
     }
 
-    var locations = new Location(locationsNames, minHourlyCustomers, maxHourlyCustomers, AvgCookiePerSale);
+
 
     locations.customerNum();
     locations.calcCookiesPurchasedPerHour();
