@@ -130,11 +130,15 @@ function totalRow() {
     data3.textContent = totalOfTotal;
     // console.log(totalOfTotal);
 
+
    
 }
 
 
 var cookieStandForm = document.getElementById('addingNewStoreform');
+
+// totalRow();
+
 
 cookieStandForm.addEventListener('submit', function () {
 
