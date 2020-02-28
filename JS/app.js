@@ -130,8 +130,6 @@ function totalRow() {
     data3.textContent = totalOfTotal;
     // console.log(totalOfTotal);
 
-
-
 }
 
 totalRow();
